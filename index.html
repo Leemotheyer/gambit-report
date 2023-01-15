@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Gambit.Report</title>
+  <meta name="description" content="Gambit.Report">
+  <meta name="keywords" content="Destiny 2 gambit tracker">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gambit.Report</h1>
+        <img id="emblem"></img>
+        <h1 id="player"></h1>
+    </div>
+    <div class="search" id="search">
+        <input type="text" id="search-bar" placeholder="Guardian#1234">
+        <button id="searchButton" onclick="run();">Search</button>
+    </div>
+    <ul class="flex-container" id="container">
+        <li class="flex-item" id="stats" style="display:none">
+            <h1>Reputation</h1>
+            <p id="rankStats"></p>
+            <h1 id="metricsH1"></h1>
+            <p id="metrics"></p>
+            <h1 id="avgH1"></h1>
+            <p id="avg"></p>
+        </li>
+        <li class="flex-item" id="table" style="display:none">
+            <table id="gambitTable">
+                <tr>
+                    <th><h2>Standing</h2></th>
+                    <th><h2>Kills</h2></th>
+                    <th><h2>Deaths</h2></th>
+                    <th><h2>Duration</h2></th>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    <div class="footer">
+        <p>Created by Enricamoose</p>
+        <button id="quickLoad" onclick="searchMe();" style="display: none; margin-left:auto; margin-right:auto;">Enricamoose</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
